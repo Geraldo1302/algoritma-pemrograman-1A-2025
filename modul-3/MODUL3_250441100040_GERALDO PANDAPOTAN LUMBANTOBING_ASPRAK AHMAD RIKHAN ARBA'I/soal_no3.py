@@ -1,5 +1,5 @@
 kalimat = input("Masukkan sebuah kalimat: ")
-vokal = "aiueoAIUEO"  
+vokal = "aiueo"  
 
 jumlah_vokal = 0
 jumlah_konsonan = 0
@@ -7,15 +7,15 @@ jumlah_kata = 0
 huruf_vokal = ""  
 huruf_konsonan = ""  
 
-for huruf in kalimat: 
-    if huruf in vokal:
+for huruf in kalimat:  
+    if huruf .lower()in vokal:
         jumlah_vokal += 1
         huruf_vokal = huruf_vokal + huruf + " "
     elif huruf != " ":
         jumlah_konsonan += 1
         huruf_konsonan = huruf_konsonan + huruf + " "
 
-if kalimat != "":
+if kalimat != "":  
     jumlah_kata = 1
     for huruf in kalimat:
         if huruf == " ":
