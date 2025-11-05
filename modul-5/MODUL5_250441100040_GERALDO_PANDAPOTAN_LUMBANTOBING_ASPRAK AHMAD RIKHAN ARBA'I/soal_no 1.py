@@ -1,16 +1,13 @@
-def factorial(n):
+def faktorial(n):
     if n == 0 or n == 1:
         return 1
     else:
-        return n * factorial(n - 1)
-
-n = int(input("masukkan bilangan bulat non - negatiif: "))
+        return n * faktorial(n - 1)
+n = int(input("masukkan bilangan bulat non - negatif: "))
 
 if n < 0:
     print("maaf, bilangan harus non negatif")
 else:
-    hasil = factorial(n)
-    print(f"hasil dari {n}! faktorial{n} adalah: 1{hasil}")
+    hasil = faktorial(n)
+    print(f"hasil dari {n}! adalah {faktorial(n)}")
 
-
-    

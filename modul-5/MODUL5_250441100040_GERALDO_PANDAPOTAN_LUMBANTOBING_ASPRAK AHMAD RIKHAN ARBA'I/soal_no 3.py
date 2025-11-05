@@ -1,9 +1,9 @@
 def gaji_bersih(nama, jabatan, gaji_pokok):
     if jabatan.lower() == "manager":
         tunjangan = gaji_pokok * 0.10
-    elif jabatan.lower*() == "staff":
+    elif jabatan.lower() == "staff":
         tunjangan = gaji_pokok * 0.05
-    else:
+    else:   
         tunjangan = 0
     # PAJAK
     pajak = gaji_pokok * 0.05
@@ -12,10 +12,10 @@ def gaji_bersih(nama, jabatan, gaji_pokok):
 
     print(f"Nama        : {nama}")
     print(f"Jabatan     : {jabatan}")
-    print(f"Gaji Pokok  : Rp {gaji_pokok:,.0f}")
-    print(f"Tunjangan   : Rp {tunjangan:,.0f}")
-    print(f"Pajak (5%)  : Rp {pajak:,.0f}")
-    print(f"Gaji Bersih : Rp {gaji_bersih:,.0f}")
+    print(f"Gaji Pokok  : Rp {gaji_pokok}")
+    print(f"Tunjangan   : Rp {tunjangan}")
+    print(f"Pajak (5%)  : Rp {pajak}")
+    print(f"Gaji Bersih : Rp {gaji_bersih}")
 
 nama = input("Nama Karyawan: ")
 jabatan = input("Jabatan (Manager/Staff): ")

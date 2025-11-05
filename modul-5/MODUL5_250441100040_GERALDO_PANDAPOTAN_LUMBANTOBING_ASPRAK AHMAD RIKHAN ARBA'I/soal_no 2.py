@@ -1,30 +1,24 @@
 def cek_anagram(kata1, kata2):
-    
-    kata1 = kata1.replace(" ", "").lower()
-    kata2 = kata2.replace(" ", "").lower()
-    
+    kata1 = kata1.lower()
+    kata2 = kata2.lower()
+
     if len(kata1) != len(kata2):
         return False
-    
+
     return sorted(kata1) == sorted(kata2)
 
-print("Masukkan dua kata untuk dicek apakah mereka anagram")
+print(" PENGECEKAN ANAGRAM ")
+kata1 = input("Masukkan kata pertama: ")
+kata2 = input("Masukkan kata kedua: ")
 
-# Inputan
-kata_pertama = input("Masukkan kata pertama: ")
-kata_kedua = input("Masukkan kata kedua: ")
+hasil = cek_anagram(kata1, kata2)
 
-# Panggil fungsi untuk di cek
-hasil = cek_anagram(kata_pertama, kata_kedua)
-
-# hasil
-print(f"\nHasil Pengecekan:")
-print(f"Kata 1: '{kata_pertama}'")
-print(f"Kata 2: '{kata_kedua}'")
+print(f"Kata 1: {kata1}")
+print(f"Kata 2: {kata2}")
 
 if hasil:
-    print(" Kedua kata merupakan ANAGRAM")
+    print("KEDUA KATA MERUPAKAN ANAGRAM")
 else:
-    print(" Kedua kata BUKAN anagram")
+    print("KEDUA KATA BUKAN ANAGRAM")
 
 print(f"Nilai yang dikembalikan: {hasil}")
